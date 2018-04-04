@@ -8,7 +8,7 @@
     "url": "git+https://github.com/practio/eslint-config-practio.git"
   },
   "author": "Practio",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/practio/eslint-config-practio/issues"
   },
