@@ -9,5 +9,6 @@ module.exports = {
       exports: 'always-multiline',
       functions: 'always-multiline',
     }],
+    "object-curly-spacing": ["error", "always"]
   },
 };
