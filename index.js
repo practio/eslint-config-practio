@@ -10,5 +10,6 @@ module.exports = {
       functions: 'always-multiline',
     }],
     'object-curly-spacing': ['error', 'always'],
+    'arrow-parens': ['error', 'as-needed'],
   },
 };
