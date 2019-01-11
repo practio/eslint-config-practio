@@ -1,7 +1,7 @@
 module.exports = {
   extends: 'standard',
   rules: {
-    'semi': ['error', 'always'],
+    semi: ['error', 'always'],
     'comma-dangle': ['error', {
       arrays: 'always-multiline',
       objects: 'always-multiline',
@@ -11,5 +11,6 @@ module.exports = {
     }],
     'object-curly-spacing': ['error', 'always'],
     'arrow-parens': ['error', 'as-needed'],
+    'quote-props': ['error', 'as-needed'],
   },
 };
