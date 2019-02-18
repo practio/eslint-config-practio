@@ -9,7 +9,6 @@ module.exports = {
       exports: 'always-multiline',
       functions: 'always-multiline',
     }],
-    'object-curly-spacing': ['error', 'always'],
     'arrow-parens': ['error', 'as-needed'],
     'quote-props': ['error', 'as-needed'],
   },
