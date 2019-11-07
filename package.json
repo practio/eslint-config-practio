@@ -17,7 +17,7 @@
     "test": "mocha",
     "preversion": "npm test",
     "postversion": "git push && git push --tags",
-    "format": "prettier-eslint --write \"**/*.@(js|ts|mjs|json|css|scss|less|html|htm|md|yml|yaml)\""
+    "format": "prettier --write \"**/*.@(js|ts|mjs|json|css|scss|less|html|htm|md|yml|yaml)\""
   },
   "husky": {
     "hooks": {
@@ -26,7 +26,7 @@
   },
   "lint-staged": {
     "*.@(js|ts|mjs|json|css|scss|less|html|htm|md|yml|yaml)": [
-      "prettier-eslint --write",
+      "prettier --write",
       "git add"
     ]
   },
@@ -46,8 +46,7 @@
     "lint-staged": "^9.2.5",
     "mocha": "^6.1.4",
     "mocha-eslint": "5.0.0",
-    "prettier": "^1.18.2",
-    "prettier-eslint-cli": "^5.0.0"
+    "prettier": "^1.18.2"
   },
   "prettier": "@practio/prettier-config"
 }
