@@ -1,7 +1,9 @@
 module.exports = {
-  extends: 'standard',
+  plugins: ['prettier'],
+  extends: ['standard', 'plugin:prettier/recommended'],
   rules: {
-    semi: ['error', 'always'],
+    // 'quotes' and 'comma-dangle' must be aligned to what the config says in https://github.com/practio/prettier-config
+    quotes: ['error', 'single', { avoidEscape: true, allowTemplateLiterals: false }],
     'comma-dangle': [
       'error',
       {
@@ -12,7 +14,5 @@ module.exports = {
         functions: 'always-multiline',
       },
     ],
-    'arrow-parens': ['error', 'as-needed'],
-    'quote-props': ['error', 'as-needed'],
   },
 };
