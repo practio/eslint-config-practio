@@ -22,7 +22,7 @@ After that create a file called `.eslintrc.json` in the root of the project with
 
 ## Enable linting highliting in your editor
 
-Most editors have extensions for eslint that allows for highlighting of linting errors while you code. It is recommnded that you install such an extention in your editor. Normally, those extensions should automatically register and use the `.eslintrc.json` file you added in the **Usage** section.
+Most editors have extensions for eslint that allows for highlighting of linting errors while you code. It is recommnded that you install such an extention in your editor. Normally, those extensions should automatically register and use the `.eslintrc.json` file you added in the **Usage** section. You can also enable the extension "Auto fix on save" option to have most linting errors fixed automatically.
 
 ## Adding mocha test for the linting
 
