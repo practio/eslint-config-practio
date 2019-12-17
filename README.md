@@ -20,6 +20,55 @@ After that create a file called `.eslintrc.json` in the root of the project with
 }
 ```
 
+
+## Adding automatic formatting
+
+First start by ensuring you have completed the steps in the **Usage** section of this readme before you continue.
+
+Then install the modules needed for the formatting script and commit hook:
+
+```bash
+$ npm i -D husky lint-staged
+```
+
+Then add the following scripts to the package.json file of your project (notice that the `format` script is also calling a `prettier:write` script, see the [prettier-config repo](https://github.com/practio/prettier-config) on how to add it):
+
+```jsonc
+{
+  "scripts": {
+    // ...
+    "eslint:fix": "eslint --fix . || echo Unfixable errors were ignored and should be caught by the tests",
+    "format": "npm run eslint:fix && npm run prettier:write"
+  }
+}
+```
+
+and add the following two entries to the root of the package.json file:
+
+```jsonc
+{
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.@(js|jsx|ts|mjs)": [
+      "eslint --fix",
+      "git add"
+    ],
+  }
+}
+```
+
+You have now added a `format` script that can be executed in order to format the whole repository (for repositories that are merged with ready builds on [Teamcity](https://build.practio.com), the merge script of [ci-merge](https://github.com/practio/ci-merge) tries to run the script `format` if one is defined in package.json).
+
+You have also added a commit hook that ensures that all files that you make changes to will be linted and auto fixed when they are staged with git.
+
+If you need the formatting to ignore some specific folders (for example coverage, build or dist folders) then add a `.prettierignore` and a `.eslintignore` file to the root of the repository and add the globs that needs to be ignored to both files (it uses [gitignore syntax](https://git-scm.com/docs/gitignore#_pattern_format)).
+
+That's it. Next time you make changes to your code, it will be formatted automatically as well.
+
 ## Enable linting highliting in your editor
 
 Most editors have extensions for eslint that allows for highlighting of linting errors while you code. It is recommnded that you install such an extention in your editor. Normally, those extensions should automatically register and use the `.eslintrc.json` file you added in the **Usage** section. You can also enable the extension "Auto fix on save" option to have most linting errors fixed automatically.
