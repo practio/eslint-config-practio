@@ -26,27 +26,26 @@
   },
   "lint-staged": {
     "*.@(js|ts|mjs|json|css|scss|less|html|htm|md|yml|yaml)": [
-      "prettier --loglevel warn --write",
-      "git add"
+      "prettier --loglevel warn --write"
     ]
   },
   "dependencies": {
     "eslint": "^6.6.0",
-    "eslint-config-prettier": "^6.7.0",
-    "eslint-config-standard": "^14.1.0",
-    "eslint-plugin-import": "^2.18.2",
-    "eslint-plugin-node": "^10.0.0",
+    "eslint-config-prettier": "^6.10.1",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-node": "^11.0.0",
     "eslint-plugin-prettier": "^3.1.1",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.1"
   },
   "devDependencies": {
     "@practio/prettier-config": "^4.0.0",
-    "husky": "^3.1.0",
-    "lint-staged": "^9.4.3",
-    "mocha": "^6.2.2",
+    "husky": "^4.2.3",
+    "lint-staged": "^10.0.8",
+    "mocha": "^7.1.1",
     "mocha-eslint": "^6.0.0",
-    "prettier": "^1.19.1"
+    "prettier": "^2.0.1"
   },
   "prettier": "@practio/prettier-config"
 }
