@@ -20,7 +20,6 @@ After that create a file called `.eslintrc.json` in the root of the project with
 }
 ```
 
-
 ## Adding automatic formatting
 
 First start by ensuring you have completed the steps in the **Usage** section of this readme before you continue.
@@ -53,10 +52,7 @@ and add the following two entries to the root of the package.json file:
     }
   },
   "lint-staged": {
-    "*.@(js|jsx|ts|mjs)": [
-      "eslint --fix",
-      "git add"
-    ],
+    "*.@(js|jsx|ts|mjs)": ["eslint --fix"]
   }
 }
 ```
