@@ -1,5 +1,5 @@
 module.exports = {
-  plugins: ['prettier', 'simple-import-sort'],
+  plugins: ['simple-import-sort'],
   extends: ['standard', 'plugin:prettier/recommended'],
   rules: {
     'simple-import-sort/imports': [
