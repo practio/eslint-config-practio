@@ -16,5 +16,9 @@ module.exports = {
       },
     ],
     'array-callback-return': 'off',
+    'import/extensions': { // https://github.com/import-js/eslint-plugin-import/blob/HEAD/docs/rules/extensions.md
+       js: 'always',
+       json: 'never'
+    }
   },
 };
