@@ -16,5 +16,12 @@ module.exports = {
       },
     ],
     'array-callback-return': 'off',
+    'import/extensions': [
+      2,
+      {
+        js: 'always',
+        json: 'never',
+      },
+    ], // https://github.com/import-js/eslint-plugin-import/blob/HEAD/docs/rules/extensions.md
   },
 };
