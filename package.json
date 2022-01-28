@@ -39,7 +39,7 @@
     "@practio/prettier-config": "^5.0.0",
     "husky": "^7.0.4",
     "lint-staged": "^12.3.2",
-    "mocha": "^7.2.0",
+    "mocha": "^9.2.0",
     "mocha-eslint": "^7.0.0",
     "prettier": "^2.5.1"
   },
