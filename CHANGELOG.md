@@ -1,5 +1,9 @@
 # Changelog
 
+## 10.0.1
+
+- Internal updated which bumps both dependencies and dev-dependencies.
+
 ## 10.0.0
 
 Breaking change:
