@@ -1,10 +1,16 @@
 # Changelog
 
-## 9.0.0 - 2021-08-17
+## 10.0.0
+
+Breaking change:
+
+- The enforce file extensions rule `import/extensions` has been changed for JSON-files from `never` to `always`.
+
+## 9.0.0
 
 - Enforce file extensions on js imports (#18)
 
-## 8.0.0 - 2021-05-06
+## 8.0.0
 
 - Bumps eslint to 7.25.0
 - Bumps plugin versions
