@@ -20,7 +20,7 @@ module.exports = {
       2,
       {
         js: 'always',
-        json: 'never',
+        json: 'always',
       },
     ], // https://github.com/import-js/eslint-plugin-import/blob/HEAD/docs/rules/extensions.md
   },
