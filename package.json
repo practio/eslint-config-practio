@@ -1,6 +1,6 @@
 {
   "name": "@practio/eslint-config-practio",
-  "version": "10.0.1",
+  "version": "10.1.0",
   "description": "Global eslint config for all Practio repos",
   "main": "index.js",
   "repository": {
