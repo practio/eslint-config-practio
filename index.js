@@ -17,11 +17,12 @@ module.exports = {
     ],
     'array-callback-return': 'off',
     'import/extensions': [
-      2,
+      'error',
+      'ignorePackages',
       {
         js: 'always',
         json: 'always',
       },
-    ], // https://github.com/import-js/eslint-plugin-import/blob/HEAD/docs/rules/extensions.md
+    ],
   },
 };
