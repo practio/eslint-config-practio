@@ -1,5 +1,9 @@
 # Changelog
 
+## 10.1.0
+
+- Add `ignorePackages` to `import/extensions` rule. Whenever we had a `/` in an import of a module this rule would require us to add an extension however this seems to prevent us from compiling with webpack in some services.
+
 ## 10.0.1
 
 - Internal updated which bumps both dependencies and dev-dependencies.
